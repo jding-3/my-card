@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Ding - Digital Trading Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card-container">
+    <!-- Button to change theme based on a prompt -->
+    <div class="theme-bar">
+      <button id="themePromptBtn" class="btn-theme" type="button">🎨 Change Theme by Prompt</button>
+    </div>
+
+    <article class="trading-card" id="tradingCard">
+      <!-- Emoji at the top of the card -->
+      <div class="top-emoji-badge" id="topEmojiBadge" title="Theme Crest">🌱</div>
+
+      <div class="card-flipper" id="cardFlipper">
+        
+        <!-- CARD FRONT -->
+        <div class="card-face card-front">
+          <div class="card-inner">
+            <!-- Card Header -->
+            <header class="card-header">
+              <span class="card-type">TYPE: GRASS 🌿</span>
+              <span class="card-hp"><span class="hp-label">HP</span> 120</span>
+            </header>
+
+            <!-- Card Portrait / Frame -->
+            <div class="card-image-wrapper">
+              <div class="card-avatar" id="avatarDisplay">
+                <span class="avatar-icon">🌿</span>
+              </div>
+              <div class="card-badge">COLLECTOR'S EDITION</div>
+            </div>
+
+            <!-- Name & Subtitle -->
+            <section class="card-identity">
+              <h1 class="card-name" id="cardName">John Ding</h1>
+              <p class="card-major" id="cardMajor">Major: Computer Science</p>
+            </section>
+
+            <!-- Stats Grid -->
+            <section class="card-stats">
+              <div class="stat-pill">
+                <span class="stat-name">Snack Power</span>
+                <span class="stat-value">78/100</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-name">Tabs Open</span>
+                <span class="stat-value">94/100</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-name">Git Blame Dodge</span>
+                <span class="stat-value">88/100</span>
+              </div>
+            </section>
+
+            <!-- Special Ability -->
+            <section class="card-ability">
+              <div class="ability-header">
+                <span class="ability-icon">✨</span>
+                <h2 class="ability-title">Photosynthetic Debugging</h2>
+              </div>
+              <p class="ability-description">
+                Converts caffeine and ambient sunlight into clean code, though 90% of the energy is spent trying to touch actual grass.
+              </p>
+            </section>
+
+            <!-- Action / Interaction Buttons -->
+            <div class="card-actions">
+              <button id="activateBtn" class="btn-activate" type="button">Activate Ability</button>
+              <button id="flipToBackBtn" class="btn-flip" type="button" aria-label="Flip card for fun fact">🔄 Fun Fact</button>
+            </div>
+
+            <!-- Card Footer -->
+            <footer class="card-footer">
+              <span>hand directed by me, built with ai</span>
+            </footer>
+          </div>
+        </div>
+
+        <!-- CARD BACK (Fun Fact) -->
+        <div class="card-face card-back">
+          <div class="card-inner card-inner-back">
+            <header class="card-header">
+              <span class="card-type">POKÉDEX DATA 🌿</span>
+              <span class="card-hp">CARD #001</span>
+            </header>
+
+            <div class="fun-fact-hero">
+              <div class="fun-fact-icon">🍃</div>
+              <h2 class="fun-fact-heading">Fun Fact</h2>
+            </div>
+
+            <div class="fun-fact-card">
+              <p class="fun-fact-text">
+                John once spent three consecutive hours hunting down an elusive runtime bug, only to realize the code was compiling perfectly fine and he was testing inside the wrong terminal tab all along.
+              </p>
+            </div>
+
+            <div class="back-details">
+              <div class="detail-row">
+                <span class="detail-label">Habitat</span>
+                <span class="detail-val">Dual Monitors &amp; Cold Brew</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Weakness</span>
+                <span class="detail-val">Accidental <code>git push -f</code></span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Evolution</span>
+                <span class="detail-val">Student ➔ 10x Engineer</span>
+              </div>
+            </div>
+
+            <div class="card-actions">
+              <button id="flipBackBtn" class="btn-flip btn-flip-back" type="button">↩ Flip Back</button>
+            </div>
+
+            <footer class="card-footer">
+              <span>hand directed by me, built with ai</span>
+            </footer>
+          </div>
+        </div>
+
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
